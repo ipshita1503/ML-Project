@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data artifacts (keep CSVs, ignore generated DBs)
+*.db
+
+# Model artifacts are tracked (small files)
+# models/*.joblib
+# models/*.json
+
+# Reference repos (not part of this project)
+_ref_repo1/
+_ref_repo2/
+
+# Streamlit
+.streamlit/
+
+# Misc
+*.log

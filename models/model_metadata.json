@@ -1,0 +1,33 @@
+{
+    "model_name": "model",
+    "feature_cols": [
+        "Year",
+        "Total Population, as of 1 January (thousands)",
+        "Births (thousands)",
+        "Crude Birth Rate (births per 1,000 population)",
+        "Infant Deaths, under age 1 (thousands)",
+        "Infant Mortality Rate (infant deaths per 1,000 live births)",
+        "Net Migration Rate (per 1,000 population)",
+        "Pop_Age_0(In Thousands)",
+        "Births_per_1000pop",
+        "Infant_mort_ratio",
+        "U5_mort_ratio",
+        "target_lag_3",
+        "target_roll3_mean",
+        "Births_YoY_growth",
+        "Population_YoY_growth",
+        "BirthRate_change",
+        "InfantMortality_change",
+        "Country_Lesotho",
+        "Country_Uzbekistan"
+    ],
+    "metrics": {
+        "Train_MAE": 3.2185052564892596,
+        "Train_RMSE": 6.22826931260077,
+        "Train_R2": 0.9996979713944292,
+        "Train_MAPE": 1.9588268697965951
+    },
+    "training_date": "2026-08-23T23:33:46.399115",
+    "split_year": null,
+    "n_training_samples": null
+}

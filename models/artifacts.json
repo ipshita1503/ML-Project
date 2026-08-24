@@ -1,0 +1,2392 @@
+{
+  "model_comparison": [
+    {
+      "Model": "Linear Regression",
+      "MAE": 10.433467966052492,
+      "RMSE": 13.002925168634546,
+      "MAPE": 4.347451392934143,
+      "R2": 0.9993204563489704,
+      "CV_MAE_Mean": 329.5186063187311,
+      "CV_MAE_Std": 427.2013738512448
+    },
+    {
+      "Model": "Ridge Regression",
+      "MAE": 21.13217077454074,
+      "RMSE": 30.692747149024182,
+      "MAPE": 4.681414793557394,
+      "R2": 0.9962137720593944,
+      "CV_MAE_Mean": 45.511463839795994,
+      "CV_MAE_Std": 26.725126932860817
+    },
+    {
+      "Model": "Huber Regressor",
+      "MAE": 7.215562932073044,
+      "RMSE": 9.006087401164859,
+      "MAPE": 3.0817232608611804,
+      "R2": 0.9996740075458186,
+      "CV_MAE_Mean": 59.12302958722739,
+      "CV_MAE_Std": 29.907054709355872
+    },
+    {
+      "Model": "Gradient Boosting",
+      "MAE": 56.85515299619996,
+      "RMSE": 93.52451643618511,
+      "MAPE": 10.844772499798687,
+      "R2": 0.964845075014625,
+      "CV_MAE_Mean": 120.18302013922784,
+      "CV_MAE_Std": 30.829481337868
+    },
+    {
+      "Model": "Random Forest",
+      "MAE": 67.65197953089717,
+      "RMSE": 109.52266074052409,
+      "MAPE": 13.860507372627282,
+      "R2": 0.9517893258118748,
+      "CV_MAE_Mean": 134.57190721252883,
+      "CV_MAE_Std": 45.11781928853676
+    }
+  ],
+  "backtest": {
+    "Kyrgyzstan": [
+      {
+        "Year": 2020,
+        "Actual": 204.3829067,
+        "Predicted": 217.37301948813962
+      },
+      {
+        "Year": 2021,
+        "Actual": 195.17848,
+        "Predicted": 201.8602791047204
+      },
+      {
+        "Year": 2022,
+        "Actual": 188.3521867,
+        "Predicted": 189.328132219347
+      },
+      {
+        "Year": 2023,
+        "Actual": 190.39808,
+        "Predicted": 187.88787478751715
+      },
+      {
+        "Year": 2024,
+        "Actual": 190.58304,
+        "Predicted": 188.66814394371784
+      }
+    ],
+    "Lesotho": [
+      {
+        "Year": 2020,
+        "Actual": 66.2454,
+        "Predicted": 64.90565217674856
+      },
+      {
+        "Year": 2021,
+        "Actual": 65.094,
+        "Predicted": 65.33247723493957
+      },
+      {
+        "Year": 2022,
+        "Actual": 59.94632,
+        "Predicted": 63.52950094374191
+      },
+      {
+        "Year": 2023,
+        "Actual": 53.97114667,
+        "Predicted": 62.68137280281627
+      },
+      {
+        "Year": 2024,
+        "Actual": 63.822,
+        "Predicted": 61.82711947761055
+      }
+    ],
+    "Uzbekistan": [
+      {
+        "Year": 2020,
+        "Actual": 1093.62792,
+        "Predicted": 1078.7079744326109
+      },
+      {
+        "Year": 2021,
+        "Actual": 1153.53876,
+        "Predicted": 1141.620462506265
+      },
+      {
+        "Year": 2022,
+        "Actual": 1197.17664,
+        "Predicted": 1194.0710899908631
+      },
+      {
+        "Year": 2023,
+        "Actual": 1222.2441,
+        "Predicted": 1221.3833545284851
+      },
+      {
+        "Year": 2024,
+        "Actual": 1223.27832,
+        "Predicted": 1223.824388335723
+      }
+    ]
+  },
+  "backtest_metrics": [
+    {
+      "Country": "Kyrgyzstan",
+      "MAE": 5.014591736194404,
+      "RMSE": 6.697908573522113,
+      "MAPE": 2.524101463771118,
+      "R2": -0.3553757595590641
+    },
+    {
+      "Country": "Lesotho",
+      "MAE": 3.17330253142773,
+      "RMSE": 4.348300101890181,
+      "MAPE": 5.526088250811744,
+      "R2": 0.04915963645127852
+    },
+    {
+      "Country": "Uzbekistan",
+      "MAE": 6.270121375499684,
+      "RMSE": 8.664111092735133,
+      "MAPE": 0.5543850459404598,
+      "R2": 0.9689611742177353
+    },
+    {
+      "Country": "Overall",
+      "MAE": 4.819338547707273,
+      "RMSE": 6.802855137431027,
+      "MAPE": 2.8681915868411076,
+      "R2": 0.9998139979722318
+    }
+  ],
+  "error_analysis": {
+    "worst_predictions": [
+      {
+        "Country": "Uzbekistan",
+        "Year": 2020,
+        "Predicted": 1078.7079744326109,
+        "Actual": 1093.62792,
+        "Absolute Error": 14.91994556738905
+      },
+      {
+        "Country": "Kyrgyzstan",
+        "Year": 2020,
+        "Predicted": 217.37301948813962,
+        "Actual": 204.3829067,
+        "Absolute Error": 12.990112788139612
+      },
+      {
+        "Country": "Uzbekistan",
+        "Year": 2021,
+        "Predicted": 1141.620462506265,
+        "Actual": 1153.53876,
+        "Absolute Error": 11.918297493734826
+      },
+      {
+        "Country": "Lesotho",
+        "Year": 2023,
+        "Predicted": 62.68137280281627,
+        "Actual": 53.97114667,
+        "Absolute Error": 8.710226132816267
+      },
+      {
+        "Country": "Kyrgyzstan",
+        "Year": 2021,
+        "Predicted": 201.8602791047204,
+        "Actual": 195.17848,
+        "Absolute Error": 6.6817991047203975
+      }
+    ],
+    "error_by_country": {
+      "Kyrgyzstan": 5.014591736194404,
+      "Lesotho": 3.17330253142773,
+      "Uzbekistan": 6.270121375499684
+    }
+  },
+  "forecast": {
+    "Kyrgyzstan": [
+      {
+        "Year": 2025,
+        "Predicted": 189.1319948477527
+      },
+      {
+        "Year": 2026,
+        "Predicted": 188.65525005707764
+      },
+      {
+        "Year": 2027,
+        "Predicted": 188.09407497394784
+      },
+      {
+        "Year": 2028,
+        "Predicted": 187.9479117861889
+      },
+      {
+        "Year": 2029,
+        "Predicted": 188.29354225818662
+      },
+      {
+        "Year": 2030,
+        "Predicted": 189.17817890641098
+      }
+    ],
+    "Lesotho": [
+      {
+        "Year": 2025,
+        "Predicted": 61.966255792659695
+      },
+      {
+        "Year": 2026,
+        "Predicted": 62.01090728043471
+      },
+      {
+        "Year": 2027,
+        "Predicted": 61.23835828884876
+      },
+      {
+        "Year": 2028,
+        "Predicted": 60.71963575527434
+      },
+      {
+        "Year": 2029,
+        "Predicted": 60.47817644806605
+      },
+      {
+        "Year": 2030,
+        "Predicted": 60.227129610899965
+      }
+    ],
+    "Uzbekistan": [
+      {
+        "Year": 2025,
+        "Predicted": 1203.3751504490317
+      },
+      {
+        "Year": 2026,
+        "Predicted": 1181.0770312974541
+      },
+      {
+        "Year": 2027,
+        "Predicted": 1162.285089996036
+      },
+      {
+        "Year": 2028,
+        "Predicted": 1148.292950448631
+      },
+      {
+        "Year": 2029,
+        "Predicted": 1137.8531959977
+      },
+      {
+        "Year": 2030,
+        "Predicted": 1130.1895135359841
+      }
+    ]
+  },
+  "monte_carlo": {
+    "Kyrgyzstan": [
+      {
+        "year": 2025,
+        "p5": 168.49749839507888,
+        "p25": 180.53391139846255,
+        "p50": 189.62994874205464,
+        "p75": 197.8830160420579,
+        "p95": 210.87605237305013
+      },
+      {
+        "year": 2026,
+        "p5": 165.5901510936011,
+        "p25": 179.95173980411886,
+        "p50": 188.34262479273139,
+        "p75": 197.73352139221993,
+        "p95": 213.1903629070911
+      },
+      {
+        "year": 2027,
+        "p5": 161.52760486942282,
+        "p25": 177.7628339614058,
+        "p50": 187.15533696638113,
+        "p75": 196.79877673766637,
+        "p95": 213.35573214742976
+      },
+      {
+        "year": 2028,
+        "p5": 157.90628942277033,
+        "p25": 175.81205947412042,
+        "p50": 186.62950248013763,
+        "p75": 198.6780178139799,
+        "p95": 217.54967009896453
+      },
+      {
+        "year": 2029,
+        "p5": 161.10216777303145,
+        "p25": 177.52743577396794,
+        "p50": 189.1038406233347,
+        "p75": 200.53280797634687,
+        "p95": 218.26943043669243
+      },
+      {
+        "year": 2030,
+        "p5": 157.08759887906137,
+        "p25": 176.86873752493813,
+        "p50": 188.36880738890858,
+        "p75": 201.83781509497888,
+        "p95": 217.87781613203322
+      }
+    ],
+    "Lesotho": [
+      {
+        "year": 2025,
+        "p5": 48.8622605441,
+        "p25": 58.437764109535756,
+        "p50": 62.5943728643972,
+        "p75": 66.64856807898073,
+        "p95": 75.26918193517339
+      },
+      {
+        "year": 2026,
+        "p5": 46.71510067291151,
+        "p25": 57.011954879107094,
+        "p50": 61.668396186717516,
+        "p75": 66.67600814308426,
+        "p95": 77.4383103116556
+      },
+      {
+        "year": 2027,
+        "p5": 45.132679180659046,
+        "p25": 56.383324308563076,
+        "p50": 61.13334942126888,
+        "p75": 66.24584998198024,
+        "p95": 77.97136431235042
+      },
+      {
+        "year": 2028,
+        "p5": 46.741179674986505,
+        "p25": 55.385234867619126,
+        "p50": 60.51838239478797,
+        "p75": 65.93237949517167,
+        "p95": 75.26103305761164
+      },
+      {
+        "year": 2029,
+        "p5": 47.30234791238495,
+        "p25": 56.39557687700653,
+        "p50": 60.99826627702551,
+        "p75": 66.41960145609828,
+        "p95": 76.37653239299752
+      },
+      {
+        "year": 2030,
+        "p5": 46.32240287246636,
+        "p25": 54.8190264537666,
+        "p50": 60.150523274737566,
+        "p75": 66.0271384359514,
+        "p95": 76.9862035759211
+      }
+    ],
+    "Uzbekistan": [
+      {
+        "year": 2025,
+        "p5": 1092.5562648629707,
+        "p25": 1161.8979517766638,
+        "p50": 1203.6453898556158,
+        "p75": 1242.8936296204336,
+        "p95": 1304.4294723723904
+      },
+      {
+        "year": 2026,
+        "p5": 1064.0492176102073,
+        "p25": 1138.5943025438378,
+        "p50": 1188.105617174422,
+        "p75": 1233.8193981793552,
+        "p95": 1313.233219921483
+      },
+      {
+        "year": 2027,
+        "p5": 1035.5540203079372,
+        "p25": 1111.1395719713316,
+        "p50": 1164.5108394665397,
+        "p75": 1220.4830191469996,
+        "p95": 1287.308810452998
+      },
+      {
+        "year": 2028,
+        "p5": 1001.4098923844355,
+        "p25": 1091.5833441888535,
+        "p50": 1143.1602184207145,
+        "p75": 1204.8155144082946,
+        "p95": 1285.281978443672
+      },
+      {
+        "year": 2029,
+        "p5": 1000.1287186163235,
+        "p25": 1077.055837685069,
+        "p50": 1140.4751968983585,
+        "p75": 1196.4045647134517,
+        "p95": 1296.27084090456
+      },
+      {
+        "year": 2030,
+        "p5": 981.5787204588818,
+        "p25": 1067.6742656288634,
+        "p50": 1136.5346974664249,
+        "p75": 1194.2436094227558,
+        "p95": 1298.6053301384002
+      }
+    ]
+  },
+  "scenarios": {
+    "Kyrgyzstan": {
+      "baseline": [
+        {
+          "Year": 2025,
+          "Predicted": 189.1319948477527
+        },
+        {
+          "Year": 2026,
+          "Predicted": 188.65525005707764
+        },
+        {
+          "Year": 2027,
+          "Predicted": 188.09407497394784
+        },
+        {
+          "Year": 2028,
+          "Predicted": 187.9479117861889
+        },
+        {
+          "Year": 2029,
+          "Predicted": 188.29354225818662
+        },
+        {
+          "Year": 2030,
+          "Predicted": 189.17817890641098
+        }
+      ],
+      "optimistic": [
+        {
+          "Year": 2025,
+          "Predicted": 189.1319948477527
+        },
+        {
+          "Year": 2026,
+          "Predicted": 188.65525005707764
+        },
+        {
+          "Year": 2027,
+          "Predicted": 188.09407497394784
+        },
+        {
+          "Year": 2028,
+          "Predicted": 187.9479117861889
+        },
+        {
+          "Year": 2029,
+          "Predicted": 188.29354225818662
+        },
+        {
+          "Year": 2030,
+          "Predicted": 189.17817890641098
+        }
+      ],
+      "pessimistic": [
+        {
+          "Year": 2025,
+          "Predicted": 189.1319948477527
+        },
+        {
+          "Year": 2026,
+          "Predicted": 188.65525005707764
+        },
+        {
+          "Year": 2027,
+          "Predicted": 188.09407497394784
+        },
+        {
+          "Year": 2028,
+          "Predicted": 187.9479117861889
+        },
+        {
+          "Year": 2029,
+          "Predicted": 188.29354225818662
+        },
+        {
+          "Year": 2030,
+          "Predicted": 189.17817890641098
+        }
+      ],
+      "pandemic": [
+        {
+          "Year": 2025,
+          "Predicted": 189.1319948477527
+        },
+        {
+          "Year": 2026,
+          "Predicted": 188.65525005707764
+        },
+        {
+          "Year": 2027,
+          "Predicted": 188.09407497394784
+        },
+        {
+          "Year": 2028,
+          "Predicted": 187.9479117861889
+        },
+        {
+          "Year": 2029,
+          "Predicted": 188.29354225818662
+        },
+        {
+          "Year": 2030,
+          "Predicted": 189.17817890641098
+        }
+      ]
+    },
+    "Lesotho": {
+      "baseline": [
+        {
+          "Year": 2025,
+          "Predicted": 61.966255792659695
+        },
+        {
+          "Year": 2026,
+          "Predicted": 62.01090728043471
+        },
+        {
+          "Year": 2027,
+          "Predicted": 61.23835828884876
+        },
+        {
+          "Year": 2028,
+          "Predicted": 60.71963575527434
+        },
+        {
+          "Year": 2029,
+          "Predicted": 60.47817644806605
+        },
+        {
+          "Year": 2030,
+          "Predicted": 60.227129610899965
+        }
+      ],
+      "optimistic": [
+        {
+          "Year": 2025,
+          "Predicted": 61.966255792659695
+        },
+        {
+          "Year": 2026,
+          "Predicted": 62.01090728043471
+        },
+        {
+          "Year": 2027,
+          "Predicted": 61.23835828884876
+        },
+        {
+          "Year": 2028,
+          "Predicted": 60.71963575527434
+        },
+        {
+          "Year": 2029,
+          "Predicted": 60.47817644806605
+        },
+        {
+          "Year": 2030,
+          "Predicted": 60.227129610899965
+        }
+      ],
+      "pessimistic": [
+        {
+          "Year": 2025,
+          "Predicted": 61.966255792659695
+        },
+        {
+          "Year": 2026,
+          "Predicted": 62.01090728043471
+        },
+        {
+          "Year": 2027,
+          "Predicted": 61.23835828884876
+        },
+        {
+          "Year": 2028,
+          "Predicted": 60.71963575527434
+        },
+        {
+          "Year": 2029,
+          "Predicted": 60.47817644806605
+        },
+        {
+          "Year": 2030,
+          "Predicted": 60.227129610899965
+        }
+      ],
+      "pandemic": [
+        {
+          "Year": 2025,
+          "Predicted": 61.966255792659695
+        },
+        {
+          "Year": 2026,
+          "Predicted": 62.01090728043471
+        },
+        {
+          "Year": 2027,
+          "Predicted": 61.23835828884876
+        },
+        {
+          "Year": 2028,
+          "Predicted": 60.71963575527434
+        },
+        {
+          "Year": 2029,
+          "Predicted": 60.47817644806605
+        },
+        {
+          "Year": 2030,
+          "Predicted": 60.227129610899965
+        }
+      ]
+    },
+    "Uzbekistan": {
+      "baseline": [
+        {
+          "Year": 2025,
+          "Predicted": 1203.3751504490317
+        },
+        {
+          "Year": 2026,
+          "Predicted": 1181.0770312974541
+        },
+        {
+          "Year": 2027,
+          "Predicted": 1162.285089996036
+        },
+        {
+          "Year": 2028,
+          "Predicted": 1148.292950448631
+        },
+        {
+          "Year": 2029,
+          "Predicted": 1137.8531959977
+        },
+        {
+          "Year": 2030,
+          "Predicted": 1130.1895135359841
+        }
+      ],
+      "optimistic": [
+        {
+          "Year": 2025,
+          "Predicted": 1203.3751504490317
+        },
+        {
+          "Year": 2026,
+          "Predicted": 1181.0770312974541
+        },
+        {
+          "Year": 2027,
+          "Predicted": 1162.285089996036
+        },
+        {
+          "Year": 2028,
+          "Predicted": 1148.292950448631
+        },
+        {
+          "Year": 2029,
+          "Predicted": 1137.8531959977
+        },
+        {
+          "Year": 2030,
+          "Predicted": 1130.1895135359841
+        }
+      ],
+      "pessimistic": [
+        {
+          "Year": 2025,
+          "Predicted": 1203.3751504490317
+        },
+        {
+          "Year": 2026,
+          "Predicted": 1181.0770312974541
+        },
+        {
+          "Year": 2027,
+          "Predicted": 1162.285089996036
+        },
+        {
+          "Year": 2028,
+          "Predicted": 1148.292950448631
+        },
+        {
+          "Year": 2029,
+          "Predicted": 1137.8531959977
+        },
+        {
+          "Year": 2030,
+          "Predicted": 1130.1895135359841
+        }
+      ],
+      "pandemic": [
+        {
+          "Year": 2025,
+          "Predicted": 1203.3751504490317
+        },
+        {
+          "Year": 2026,
+          "Predicted": 1181.0770312974541
+        },
+        {
+          "Year": 2027,
+          "Predicted": 1162.285089996036
+        },
+        {
+          "Year": 2028,
+          "Predicted": 1148.292950448631
+        },
+        {
+          "Year": 2029,
+          "Predicted": 1137.8531959977
+        },
+        {
+          "Year": 2030,
+          "Predicted": 1130.1895135359841
+        }
+      ]
+    }
+  },
+  "scenario_meta": {
+    "baseline": {
+      "label": "Baseline",
+      "color": "blue",
+      "description": "UN projected demographics"
+    },
+    "optimistic": {
+      "label": "Optimistic",
+      "color": "green",
+      "description": "15% lower IMR, 2% higher births"
+    },
+    "pessimistic": {
+      "label": "Pessimistic",
+      "color": "orange",
+      "description": "15% higher IMR, 5% lower births"
+    },
+    "pandemic": {
+      "label": "Pandemic",
+      "color": "red",
+      "description": "70% drop in migration, 3% lower births"
+    }
+  },
+  "feature_importance": [
+    {
+      "Feature": "Pop_Age_0(In Thousands)",
+      "Importance": 329.11379466181785,
+      "Abs_Importance": 329.11379466181785
+    },
+    {
+      "Feature": "Infant_mort_ratio",
+      "Importance": 242.23843617129737,
+      "Abs_Importance": 242.23843617129737
+    },
+    {
+      "Feature": "U5_mort_ratio",
+      "Importance": -124.17141299457224,
+      "Abs_Importance": 124.17141299457224
+    },
+    {
+      "Feature": "Infant Mortality Rate (infant deaths per 1,000 live births)",
+      "Importance": -114.80466935450546,
+      "Abs_Importance": 114.80466935450546
+    },
+    {
+      "Feature": "target_roll3_mean",
+      "Importance": 38.13164614975999,
+      "Abs_Importance": 38.13164614975999
+    },
+    {
+      "Feature": "target_lag_3",
+      "Importance": -18.673084218382655,
+      "Abs_Importance": 18.673084218382655
+    },
+    {
+      "Feature": "Births (thousands)",
+      "Importance": 13.250598179119029,
+      "Abs_Importance": 13.250598179119029
+    },
+    {
+      "Feature": "Infant Deaths, under age 1 (thousands)",
+      "Importance": -11.138030119721964,
+      "Abs_Importance": 11.138030119721964
+    },
+    {
+      "Feature": "Country_Uzbekistan",
+      "Importance": 8.005159071078875,
+      "Abs_Importance": 8.005159071078875
+    },
+    {
+      "Feature": "Country_Lesotho",
+      "Importance": -5.806082126198883,
+      "Abs_Importance": 5.806082126198883
+    },
+    {
+      "Feature": "Total Population, as of 1 January (thousands)",
+      "Importance": -3.1226623555052893,
+      "Abs_Importance": 3.1226623555052893
+    },
+    {
+      "Feature": "BirthRate_change",
+      "Importance": 2.6489703472258324,
+      "Abs_Importance": 2.6489703472258324
+    },
+    {
+      "Feature": "Births_YoY_growth",
+      "Importance": -2.602598839256971,
+      "Abs_Importance": 2.602598839256971
+    },
+    {
+      "Feature": "Year",
+      "Importance": 1.5391064651498612,
+      "Abs_Importance": 1.5391064651498612
+    },
+    {
+      "Feature": "Population_YoY_growth",
+      "Importance": -1.4860664745854473,
+      "Abs_Importance": 1.4860664745854473
+    },
+    {
+      "Feature": "Births_per_1000pop",
+      "Importance": -1.3485423856101488,
+      "Abs_Importance": 1.3485423856101488
+    },
+    {
+      "Feature": "Crude Birth Rate (births per 1,000 population)",
+      "Importance": 1.0048067375683631,
+      "Abs_Importance": 1.0048067375683631
+    },
+    {
+      "Feature": "InfantMortality_change",
+      "Importance": 0.3078232277067073,
+      "Abs_Importance": 0.3078232277067073
+    },
+    {
+      "Feature": "Net Migration Rate (per 1,000 population)",
+      "Importance": 0.01726351836228763,
+      "Abs_Importance": 0.01726351836228763
+    }
+  ],
+  "permutation_importance": [
+    {
+      "Feature": "Pop_Age_0(In Thousands)",
+      "Importance_Mean": 1.6219317946946952,
+      "Importance_Std": 0.37180758996668223
+    },
+    {
+      "Feature": "Infant_mort_ratio",
+      "Importance_Mean": 0.3718709869362524,
+      "Importance_Std": 0.07980790097154981
+    },
+    {
+      "Feature": "U5_mort_ratio",
+      "Importance_Mean": 0.09396908169349724,
+      "Importance_Std": 0.020050117613140163
+    },
+    {
+      "Feature": "Infant Mortality Rate (infant deaths per 1,000 live births)",
+      "Importance_Mean": 0.08318248239552958,
+      "Importance_Std": 0.017857370174282777
+    },
+    {
+      "Feature": "target_roll3_mean",
+      "Importance_Mean": 0.021194148240978185,
+      "Importance_Std": 0.004898615900937474
+    },
+    {
+      "Feature": "target_lag_3",
+      "Importance_Mean": 0.0044262517981601525,
+      "Importance_Std": 0.0009309204758115587
+    },
+    {
+      "Feature": "Births (thousands)",
+      "Importance_Mean": 0.002790920997975377,
+      "Importance_Std": 0.0006876422373056501
+    },
+    {
+      "Feature": "Country_Uzbekistan",
+      "Importance_Mean": 0.0006222629051011008,
+      "Importance_Std": 0.00016372921421264574
+    },
+    {
+      "Feature": "Country_Lesotho",
+      "Importance_Mean": 0.0002778632033901496,
+      "Importance_Std": 7.402123881124583e-05
+    },
+    {
+      "Feature": "Infant Deaths, under age 1 (thousands)",
+      "Importance_Mean": 0.00016216627982608146,
+      "Importance_Std": 3.885991223157656e-05
+    },
+    {
+      "Feature": "BirthRate_change",
+      "Importance_Mean": 8.567127665580765e-05,
+      "Importance_Std": 3.347252484140805e-05
+    },
+    {
+      "Feature": "Total Population, as of 1 January (thousands)",
+      "Importance_Mean": 7.420793792313196e-05,
+      "Importance_Std": 2.0839061916376297e-05
+    },
+    {
+      "Feature": "Births_YoY_growth",
+      "Importance_Mean": 5.569522968938978e-05,
+      "Importance_Std": 2.0257043482181413e-05
+    },
+    {
+      "Feature": "Population_YoY_growth",
+      "Importance_Mean": 9.62306907550392e-06,
+      "Importance_Std": 8.326085429034363e-06
+    },
+    {
+      "Feature": "Crude Birth Rate (births per 1,000 population)",
+      "Importance_Mean": 4.038160305575023e-06,
+      "Importance_Std": 2.1819250354641263e-06
+    },
+    {
+      "Feature": "Year",
+      "Importance_Mean": 1.0013265282382555e-06,
+      "Importance_Std": 1.1105686272752893e-06
+    },
+    {
+      "Feature": "InfantMortality_change",
+      "Importance_Mean": 6.516402091372165e-07,
+      "Importance_Std": 8.976279336124671e-07
+    },
+    {
+      "Feature": "Net Migration Rate (per 1,000 population)",
+      "Importance_Mean": -1.4462643062040924e-07,
+      "Importance_Std": 5.2776581932587363e-08
+    },
+    {
+      "Feature": "Births_per_1000pop",
+      "Importance_Mean": -1.1650374443727963e-06,
+      "Importance_Std": 3.0707583790885008e-06
+    }
+  ],
+  "country_explanations": {
+    "Kyrgyzstan": [
+      {
+        "feature": "Pop_Age_0(In Thousands)",
+        "value": 148.893,
+        "importance": 329.11379466181785,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Infant_mort_ratio",
+        "value": 0.012112947750024944,
+        "importance": 242.23843617129737,
+        "direction": "Increases"
+      },
+      {
+        "feature": "U5_mort_ratio",
+        "value": 0.014680546778860543,
+        "importance": -124.17141299457224,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Infant Mortality Rate (infant deaths per 1,000 live births)",
+        "value": 12.11,
+        "importance": -114.80466935450546,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "target_roll3_mean",
+        "value": 191.30958223333334,
+        "importance": 38.13164614975999,
+        "direction": "Increases"
+      },
+      {
+        "feature": "target_lag_3",
+        "value": 195.17848,
+        "importance": -18.673084218382655,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Births (thousands)",
+        "value": 150.335,
+        "importance": 13.250598179119029,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Infant Deaths, under age 1 (thousands)",
+        "value": 1.821,
+        "importance": -11.138030119721964,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Country_Uzbekistan",
+        "value": 0,
+        "importance": 8.005159071078875,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Country_Lesotho",
+        "value": 0,
+        "importance": -5.806082126198883,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Total Population, as of 1 January (thousands)",
+        "value": 7130.594,
+        "importance": -3.1226623555052893,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "BirthRate_change",
+        "value": -0.2900000000000027,
+        "importance": 2.6489703472258324,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Births_YoY_growth",
+        "value": 0.003274171973886464,
+        "importance": -2.602598839256971,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Year",
+        "value": 2024,
+        "importance": 1.5391064651498612,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Population_YoY_growth",
+        "value": 0.017591813595055905,
+        "importance": -1.4860664745854473,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Births_per_1000pop",
+        "value": 20.920513737180123,
+        "importance": -1.3485423856101488,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Crude Birth Rate (births per 1,000 population)",
+        "value": 20.921,
+        "importance": 1.0048067375683631,
+        "direction": "Increases"
+      },
+      {
+        "feature": "InfantMortality_change",
+        "value": -0.29100000000000037,
+        "importance": 0.3078232277067073,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Net Migration Rate (per 1,000 population)",
+        "value": 0.507,
+        "importance": 0.01726351836228763,
+        "direction": "Increases"
+      }
+    ],
+    "Lesotho": [
+      {
+        "feature": "Pop_Age_0(In Thousands)",
+        "value": 53.185,
+        "importance": 329.11379466181785,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Infant_mort_ratio",
+        "value": 0.0546973461524612,
+        "importance": 242.23843617129737,
+        "direction": "Increases"
+      },
+      {
+        "feature": "U5_mort_ratio",
+        "value": 0.06942493968528321,
+        "importance": -124.17141299457224,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Infant Mortality Rate (infant deaths per 1,000 live births)",
+        "value": 54.613,
+        "importance": -114.80466935450546,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "target_roll3_mean",
+        "value": 59.67048889,
+        "importance": 38.13164614975999,
+        "direction": "Increases"
+      },
+      {
+        "feature": "target_lag_3",
+        "value": 65.094,
+        "importance": -18.673084218382655,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Births (thousands)",
+        "value": 55.542,
+        "importance": 13.250598179119029,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Infant Deaths, under age 1 (thousands)",
+        "value": 3.038,
+        "importance": -11.138030119721964,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Country_Uzbekistan",
+        "value": 0,
+        "importance": 8.005159071078875,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Country_Lesotho",
+        "value": 1,
+        "importance": -5.806082126198883,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Total Population, as of 1 January (thousands)",
+        "value": 2324.448,
+        "importance": -3.1226623555052893,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "BirthRate_change",
+        "value": -0.2829999999999977,
+        "importance": 2.6489703472258324,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Births_YoY_growth",
+        "value": -0.0006455777921239303,
+        "importance": -2.602598839256971,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Year",
+        "value": 2024,
+        "importance": 1.5391064651498612,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Population_YoY_growth",
+        "value": 0.0108944573332308,
+        "importance": -1.4860664745854473,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Births_per_1000pop",
+        "value": 23.762066172875002,
+        "importance": -1.3485423856101488,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Crude Birth Rate (births per 1,000 population)",
+        "value": 23.762,
+        "importance": 1.0048067375683631,
+        "direction": "Increases"
+      },
+      {
+        "feature": "InfantMortality_change",
+        "value": -0.9859999999999971,
+        "importance": 0.3078232277067073,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Net Migration Rate (per 1,000 population)",
+        "value": -2.185,
+        "importance": 0.01726351836228763,
+        "direction": "Increases"
+      }
+    ],
+    "Uzbekistan": [
+      {
+        "feature": "Pop_Age_0(In Thousands)",
+        "value": 926.726,
+        "importance": 329.11379466181785,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Infant_mort_ratio",
+        "value": 0.012226512226512226,
+        "importance": 242.23843617129737,
+        "direction": "Increases"
+      },
+      {
+        "feature": "U5_mort_ratio",
+        "value": 0.014711199493808188,
+        "importance": -124.17141299457224,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Infant Mortality Rate (infant deaths per 1,000 live births)",
+        "value": 12.202,
+        "importance": -114.80466935450546,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "target_roll3_mean",
+        "value": 1190.9865,
+        "importance": 38.13164614975999,
+        "direction": "Increases"
+      },
+      {
+        "feature": "target_lag_3",
+        "value": 1153.53876,
+        "importance": -18.673084218382655,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Births (thousands)",
+        "value": 929.292,
+        "importance": 13.250598179119029,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Infant Deaths, under age 1 (thousands)",
+        "value": 11.362,
+        "importance": -11.138030119721964,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Country_Uzbekistan",
+        "value": 1,
+        "importance": 8.005159071078875,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Country_Lesotho",
+        "value": 0,
+        "importance": -5.806082126198883,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Total Population, as of 1 January (thousands)",
+        "value": 36010.454,
+        "importance": -3.1226623555052893,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "BirthRate_change",
+        "value": -0.05900000000000105,
+        "importance": 2.6489703472258324,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Births_YoY_growth",
+        "value": 0.018142206933165372,
+        "importance": -2.602598839256971,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Year",
+        "value": 2024,
+        "importance": 1.5391064651498612,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Population_YoY_growth",
+        "value": 0.020541698903626893,
+        "importance": -1.4860664745854473,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Births_per_1000pop",
+        "value": 25.556779151472977,
+        "importance": -1.3485423856101488,
+        "direction": "Decreases"
+      },
+      {
+        "feature": "Crude Birth Rate (births per 1,000 population)",
+        "value": 25.557,
+        "importance": 1.0048067375683631,
+        "direction": "Increases"
+      },
+      {
+        "feature": "InfantMortality_change",
+        "value": -0.022999999999999687,
+        "importance": 0.3078232277067073,
+        "direction": "Increases"
+      },
+      {
+        "feature": "Net Migration Rate (per 1,000 population)",
+        "value": -0.194,
+        "importance": 0.01726351836228763,
+        "direction": "Increases"
+      }
+    ]
+  },
+  "tornado": {
+    "Kyrgyzstan": [
+      {
+        "feature": "Pop_Age_0(In Thousands)",
+        "label": "Population Age 0",
+        "positive_impact": 4.973285231980511,
+        "negative_impact": -4.973285231980511,
+        "abs_impact": 4.973285231980511
+      },
+      {
+        "feature": "Infant Deaths, under age 1 (thousands)",
+        "label": "Infant Deaths",
+        "positive_impact": 2.879865525840248,
+        "negative_impact": -2.8798655258403234,
+        "abs_impact": 2.8798655258403234
+      },
+      {
+        "feature": "Births (thousands)",
+        "label": "Births",
+        "positive_impact": -1.850614203557524,
+        "negative_impact": 2.0074394356042675,
+        "abs_impact": 2.0074394356042675
+      },
+      {
+        "feature": "Infant Mortality Rate (infant deaths per 1,000 live births)",
+        "label": "Infant Mortality Rate",
+        "positive_impact": -1.3845529573932083,
+        "negative_impact": 1.3845529573931932,
+        "abs_impact": 1.3845529573932083
+      },
+      {
+        "feature": "Under-Five Deaths, under age 5 (thousands)",
+        "label": "Under-5 Deaths",
+        "positive_impact": -1.3794957115790563,
+        "negative_impact": 1.3794957115790711,
+        "abs_impact": 1.3794957115790711
+      },
+      {
+        "feature": "Crude Birth Rate (births per 1,000 population)",
+        "label": "Birth Rate",
+        "positive_impact": 0.4230568049661663,
+        "negative_impact": -0.4230568049661512,
+        "abs_impact": 0.4230568049661663
+      },
+      {
+        "feature": "Net Migration Rate (per 1,000 population)",
+        "label": "Migration Rate",
+        "positive_impact": -1.7552884905651145e-06,
+        "negative_impact": 1.7552884754912958e-06,
+        "abs_impact": 1.7552884905651145e-06
+      }
+    ],
+    "Lesotho": [
+      {
+        "feature": "Infant Deaths, under age 1 (thousands)",
+        "label": "Infant Deaths",
+        "positive_impact": 41.0338054788672,
+        "negative_impact": -41.033805478867166,
+        "abs_impact": 41.0338054788672
+      },
+      {
+        "feature": "Births (thousands)",
+        "label": "Births",
+        "positive_impact": -21.59809369934895,
+        "negative_impact": 23.705429618408044,
+        "abs_impact": 23.705429618408044
+      },
+      {
+        "feature": "Under-Five Deaths, under age 5 (thousands)",
+        "label": "Under-5 Deaths",
+        "positive_impact": -20.346659795798804,
+        "negative_impact": 20.346659795798864,
+        "abs_impact": 20.346659795798864
+      },
+      {
+        "feature": "Infant Mortality Rate (infant deaths per 1,000 live births)",
+        "label": "Infant Mortality Rate",
+        "positive_impact": -19.443909733687263,
+        "negative_impact": 19.443909733687253,
+        "abs_impact": 19.443909733687263
+      },
+      {
+        "feature": "Pop_Age_0(In Thousands)",
+        "label": "Population Age 0",
+        "positive_impact": 5.51311209941671,
+        "negative_impact": -5.513112099416652,
+        "abs_impact": 5.51311209941671
+      },
+      {
+        "feature": "Crude Birth Rate (births per 1,000 population)",
+        "label": "Birth Rate",
+        "positive_impact": 1.5091274802597714,
+        "negative_impact": -1.5091274802596784,
+        "abs_impact": 1.5091274802597714
+      },
+      {
+        "feature": "Net Migration Rate (per 1,000 population)",
+        "label": "Migration Rate",
+        "positive_impact": -0.0006513162326010723,
+        "negative_impact": 0.0006513162326475839,
+        "abs_impact": 0.0006513162326475839
+      }
+    ],
+    "Uzbekistan": [
+      {
+        "feature": "Pop_Age_0(In Thousands)",
+        "label": "Population Age 0",
+        "positive_impact": 4.811322344149545,
+        "negative_impact": -4.811322344149506,
+        "abs_impact": 4.811322344149545
+      },
+      {
+        "feature": "Infant Deaths, under age 1 (thousands)",
+        "label": "Infant Deaths",
+        "positive_impact": 0.43321669556491943,
+        "negative_impact": -0.43321669556488024,
+        "abs_impact": 0.43321669556491943
+      },
+      {
+        "feature": "Under-Five Deaths, under age 5 (thousands)",
+        "label": "Under-5 Deaths",
+        "positive_impact": -0.23436670800636444,
+        "negative_impact": 0.23436670800636444,
+        "abs_impact": 0.23436670800636444
+      },
+      {
+        "feature": "Infant Mortality Rate (infant deaths per 1,000 live births)",
+        "label": "Infant Mortality Rate",
+        "positive_impact": -0.2334843596288023,
+        "negative_impact": 0.23348435962882189,
+        "abs_impact": 0.23348435962882189
+      },
+      {
+        "feature": "Births (thousands)",
+        "label": "Births",
+        "positive_impact": -0.15509905084831555,
+        "negative_impact": 0.18145255782095232,
+        "abs_impact": 0.18145255782095232
+      },
+      {
+        "feature": "Crude Birth Rate (births per 1,000 population)",
+        "label": "Birth Rate",
+        "positive_impact": 0.07832746600762247,
+        "negative_impact": -0.07832746600760288,
+        "abs_impact": 0.07832746600762247
+      },
+      {
+        "feature": "Net Migration Rate (per 1,000 population)",
+        "label": "Migration Rate",
+        "positive_impact": -2.0448777698718275e-06,
+        "negative_impact": 2.0448777698718275e-06,
+        "abs_impact": 2.0448777698718275e-06
+      }
+    ]
+  },
+  "feature_impact": {
+    "Kyrgyzstan": [
+      {
+        "name": "Population Age 0",
+        "impact_level": "HIGH",
+        "score": 4.973285231980511
+      },
+      {
+        "name": "Infant Deaths",
+        "impact_level": "HIGH",
+        "score": 2.8798655258403234
+      },
+      {
+        "name": "Births",
+        "impact_level": "HIGH",
+        "score": 2.0074394356042675
+      },
+      {
+        "name": "Infant Mortality Rate",
+        "impact_level": "HIGH",
+        "score": 1.3845529573932083
+      },
+      {
+        "name": "Under-5 Deaths",
+        "impact_level": "HIGH",
+        "score": 1.3794957115790711
+      },
+      {
+        "name": "Birth Rate",
+        "impact_level": "MEDIUM",
+        "score": 0.4230568049661663
+      },
+      {
+        "name": "Migration Rate",
+        "impact_level": "LOW",
+        "score": 1.7552884905651145e-06
+      }
+    ],
+    "Lesotho": [
+      {
+        "name": "Infant Deaths",
+        "impact_level": "HIGH",
+        "score": 41.0338054788672
+      },
+      {
+        "name": "Births",
+        "impact_level": "HIGH",
+        "score": 23.705429618408044
+      },
+      {
+        "name": "Under-5 Deaths",
+        "impact_level": "HIGH",
+        "score": 20.346659795798864
+      },
+      {
+        "name": "Infant Mortality Rate",
+        "impact_level": "HIGH",
+        "score": 19.443909733687263
+      },
+      {
+        "name": "Population Age 0",
+        "impact_level": "HIGH",
+        "score": 5.51311209941671
+      },
+      {
+        "name": "Birth Rate",
+        "impact_level": "HIGH",
+        "score": 1.5091274802597714
+      },
+      {
+        "name": "Migration Rate",
+        "impact_level": "LOW",
+        "score": 0.0006513162326475839
+      }
+    ],
+    "Uzbekistan": [
+      {
+        "name": "Population Age 0",
+        "impact_level": "HIGH",
+        "score": 4.811322344149545
+      },
+      {
+        "name": "Infant Deaths",
+        "impact_level": "MEDIUM",
+        "score": 0.43321669556491943
+      },
+      {
+        "name": "Under-5 Deaths",
+        "impact_level": "MEDIUM",
+        "score": 0.23436670800636444
+      },
+      {
+        "name": "Infant Mortality Rate",
+        "impact_level": "MEDIUM",
+        "score": 0.23348435962882189
+      },
+      {
+        "name": "Births",
+        "impact_level": "LOW",
+        "score": 0.18145255782095232
+      },
+      {
+        "name": "Birth Rate",
+        "impact_level": "LOW",
+        "score": 0.07832746600762247
+      },
+      {
+        "name": "Migration Rate",
+        "impact_level": "LOW",
+        "score": 2.0448777698718275e-06
+      }
+    ]
+  },
+  "elasticity": {
+    "Kyrgyzstan": {
+      "Population Age 0": [
+        {
+          "x": -20.0,
+          "y": -19.893140927922026
+        },
+        {
+          "x": -18.0,
+          "y": -17.903826835129802
+        },
+        {
+          "x": -16.0,
+          "y": -15.914512742337623
+        },
+        {
+          "x": -14.0,
+          "y": -13.925198649545411
+        },
+        {
+          "x": -12.0,
+          "y": -11.935884556753216
+        },
+        {
+          "x": -10.0,
+          "y": -9.946570463961006
+        },
+        {
+          "x": -8.0,
+          "y": -7.95725637116878
+        },
+        {
+          "x": -6.0,
+          "y": -5.967942278376601
+        },
+        {
+          "x": -4.0,
+          "y": -3.9786281855844057
+        },
+        {
+          "x": -2.0,
+          "y": -1.9893140927922104
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 2.0,
+          "y": 1.9893140927922104
+        },
+        {
+          "x": 4.0,
+          "y": 3.9786281855844208
+        },
+        {
+          "x": 6.0,
+          "y": 5.967942278376616
+        },
+        {
+          "x": 8.0,
+          "y": 7.9572563711688415
+        },
+        {
+          "x": 10.0,
+          "y": 9.946570463961036
+        },
+        {
+          "x": 12.0,
+          "y": 11.935884556753232
+        },
+        {
+          "x": 14.0,
+          "y": 13.925198649545441
+        },
+        {
+          "x": 16.0,
+          "y": 15.914512742337623
+        },
+        {
+          "x": 18.0,
+          "y": 17.903826835129834
+        },
+        {
+          "x": 20.0,
+          "y": 19.893140927922012
+        }
+      ],
+      "Infant Deaths": [
+        {
+          "x": -20.0,
+          "y": -11.519462103361112
+        },
+        {
+          "x": -18.0,
+          "y": -10.36751589302503
+        },
+        {
+          "x": -16.0,
+          "y": -9.21556968268892
+        },
+        {
+          "x": -14.0,
+          "y": -8.063623472352809
+        },
+        {
+          "x": -12.0,
+          "y": -6.911677262016698
+        },
+        {
+          "x": -10.0,
+          "y": -5.759731051680571
+        },
+        {
+          "x": -8.0,
+          "y": -4.607784841344445
+        },
+        {
+          "x": -6.0,
+          "y": -3.455838631008349
+        },
+        {
+          "x": -4.0,
+          "y": -2.303892420672253
+        },
+        {
+          "x": -2.0,
+          "y": -1.1519462103361264
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 2.0,
+          "y": 1.1519462103361113
+        },
+        {
+          "x": 4.0,
+          "y": 2.3038924206721925
+        },
+        {
+          "x": 6.0,
+          "y": 3.4558386310083185
+        },
+        {
+          "x": 8.0,
+          "y": 4.60778484134446
+        },
+        {
+          "x": 10.0,
+          "y": 5.759731051680556
+        },
+        {
+          "x": 12.0,
+          "y": 6.911677262016683
+        },
+        {
+          "x": 14.0,
+          "y": 8.063623472352779
+        },
+        {
+          "x": 16.0,
+          "y": 9.21556968268889
+        },
+        {
+          "x": 18.0,
+          "y": 10.36751589302503
+        },
+        {
+          "x": 20.0,
+          "y": 11.519462103361082
+        }
+      ],
+      "Births": [
+        {
+          "x": -20.0,
+          "y": 9.26475644478533
+        },
+        {
+          "x": -18.0,
+          "y": 8.166585858758022
+        },
+        {
+          "x": -16.0,
+          "y": 7.113837214939419
+        },
+        {
+          "x": -14.0,
+          "y": 6.103341540617229
+        },
+        {
+          "x": -12.0,
+          "y": 5.1322179515076085
+        },
+        {
+          "x": -10.0,
+          "y": 4.197841641929749
+        },
+        {
+          "x": -8.0,
+          "y": 3.297816050175071
+        },
+        {
+          "x": -6.0,
+          "y": 2.4299485772335294
+        },
+        {
+          "x": -4.0,
+          "y": 1.5922293406793193
+        },
+        {
+          "x": -2.0,
+          "y": 0.7828125301214125
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 2.0,
+          "y": -0.757773207357678
+        },
+        {
+          "x": 4.0,
+          "y": -1.4919516682647944
+        },
+        {
+          "x": 6.0,
+          "y": -2.203870934407382
+        },
+        {
+          "x": 8.0,
+          "y": -2.8947676277167247
+        },
+        {
+          "x": 10.0,
+          "y": -3.5657884339837436
+        },
+        {
+          "x": 12.0,
+          "y": -4.217998132871396
+        },
+        {
+          "x": 14.0,
+          "y": -4.852386782662823
+        },
+        {
+          "x": 16.0,
+          "y": -5.469876161759571
+        },
+        {
+          "x": 18.0,
+          "y": -6.071325555112205
+        },
+        {
+          "x": 20.0,
+          "y": -6.657536962007892
+        }
+      ]
+    },
+    "Lesotho": {
+      "Infant Deaths": [
+        {
+          "x": -20.0,
+          "y": -164.13522191546858
+        },
+        {
+          "x": -18.0,
+          "y": -147.7216997239216
+        },
+        {
+          "x": -16.0,
+          "y": -131.3081775323748
+        },
+        {
+          "x": -14.0,
+          "y": -114.89465534082797
+        },
+        {
+          "x": -12.0,
+          "y": -98.4811331492811
+        },
+        {
+          "x": -10.0,
+          "y": -82.06761095773422
+        },
+        {
+          "x": -8.0,
+          "y": -65.65408876618737
+        },
+        {
+          "x": -6.0,
+          "y": -49.2405665746406
+        },
+        {
+          "x": -4.0,
+          "y": -32.82704438309371
+        },
+        {
+          "x": -2.0,
+          "y": -16.413522191546825
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 2.0,
+          "y": 16.41352219154686
+        },
+        {
+          "x": 4.0,
+          "y": 32.82704438309375
+        },
+        {
+          "x": 6.0,
+          "y": 49.240566574640646
+        },
+        {
+          "x": 8.0,
+          "y": 65.65408876618753
+        },
+        {
+          "x": 10.0,
+          "y": 82.06761095773429
+        },
+        {
+          "x": 12.0,
+          "y": 98.48113314928129
+        },
+        {
+          "x": 14.0,
+          "y": 114.89465534082812
+        },
+        {
+          "x": 16.0,
+          "y": 131.30817753237483
+        },
+        {
+          "x": 18.0,
+          "y": 147.72169972392172
+        },
+        {
+          "x": 20.0,
+          "y": 164.13522191546858
+        }
+      ],
+      "Births": [
+        {
+          "x": -20.0,
+          "y": 111.4169888362222
+        },
+        {
+          "x": -18.0,
+          "y": 97.96814260950822
+        },
+        {
+          "x": -16.0,
+          "y": 85.12965282276564
+        },
+        {
+          "x": -14.0,
+          "y": 72.8589364685544
+        },
+        {
+          "x": -12.0,
+          "y": 61.117281721929494
+        },
+        {
+          "x": -10.0,
+          "y": 49.8694178090516
+        },
+        {
+          "x": -8.0,
+          "y": 39.0831409798939
+        },
+        {
+          "x": -6.0,
+          "y": 28.72898822911249
+        },
+        {
+          "x": -4.0,
+          "y": 18.77995180180877
+        },
+        {
+          "x": -2.0,
+          "y": 9.211228657769938
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 2.0,
+          "y": -8.874763258928509
+        },
+        {
+          "x": 4.0,
+          "y": -17.432472584333468
+        },
+        {
+          "x": 6.0,
+          "y": -25.69107442528224
+        },
+        {
+          "x": 8.0,
+          "y": -33.667185864244495
+        },
+        {
+          "x": 10.0,
+          "y": -41.376215468601444
+        },
+        {
+          "x": 12.0,
+          "y": -48.83247119377835
+        },
+        {
+          "x": 14.0,
+          "y": -56.049256928153035
+        },
+        {
+          "x": 16.0,
+          "y": -63.03895905056008
+        },
+        {
+          "x": 18.0,
+          "y": -69.81312418533695
+        },
+        {
+          "x": 20.0,
+          "y": -76.38252918186514
+        }
+      ],
+      "Under-5 Deaths": [
+        {
+          "x": -20.0,
+          "y": 81.38663918319531
+        },
+        {
+          "x": -18.0,
+          "y": 73.24797526487575
+        },
+        {
+          "x": -16.0,
+          "y": 65.10931134655627
+        },
+        {
+          "x": -14.0,
+          "y": 56.97064742823673
+        },
+        {
+          "x": -12.0,
+          "y": 48.83198350991721
+        },
+        {
+          "x": -10.0,
+          "y": 40.69331959159764
+        },
+        {
+          "x": -8.0,
+          "y": 32.554655673278106
+        },
+        {
+          "x": -6.0,
+          "y": 24.41599175495868
+        },
+        {
+          "x": -4.0,
+          "y": 16.27732783663907
+        },
+        {
+          "x": -2.0,
+          "y": 8.138663918319576
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 2.0,
+          "y": -8.13866391831954
+        },
+        {
+          "x": 4.0,
+          "y": -16.277327836639056
+        },
+        {
+          "x": 6.0,
+          "y": -24.415991754958647
+        },
+        {
+          "x": 8.0,
+          "y": -32.55465567327816
+        },
+        {
+          "x": 10.0,
+          "y": -40.693319591597685
+        },
+        {
+          "x": 12.0,
+          "y": -48.83198350991723
+        },
+        {
+          "x": 14.0,
+          "y": -56.97064742823677
+        },
+        {
+          "x": 16.0,
+          "y": -65.10931134655621
+        },
+        {
+          "x": 18.0,
+          "y": -73.24797526487575
+        },
+        {
+          "x": 20.0,
+          "y": -81.38663918319523
+        }
+      ]
+    },
+    "Uzbekistan": {
+      "Population Age 0": [
+        {
+          "x": -20.0,
+          "y": -19.245289376598112
+        },
+        {
+          "x": -18.0,
+          "y": -17.32076043893829
+        },
+        {
+          "x": -16.0,
+          "y": -15.396231501278487
+        },
+        {
+          "x": -14.0,
+          "y": -13.471702563618665
+        },
+        {
+          "x": -12.0,
+          "y": -11.547173625958854
+        },
+        {
+          "x": -10.0,
+          "y": -9.622644688299031
+        },
+        {
+          "x": -8.0,
+          "y": -7.698115750639229
+        },
+        {
+          "x": -6.0,
+          "y": -5.773586812979427
+        },
+        {
+          "x": -4.0,
+          "y": -3.8490578753196045
+        },
+        {
+          "x": -2.0,
+          "y": -1.9245289376598023
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 2.0,
+          "y": 1.924528937659822
+        },
+        {
+          "x": 4.0,
+          "y": 3.849057875319644
+        },
+        {
+          "x": 6.0,
+          "y": 5.773586812979446
+        },
+        {
+          "x": 8.0,
+          "y": 7.698115750639269
+        },
+        {
+          "x": 10.0,
+          "y": 9.62264468829907
+        },
+        {
+          "x": 12.0,
+          "y": 11.547173625958873
+        },
+        {
+          "x": 14.0,
+          "y": 13.471702563618695
+        },
+        {
+          "x": 16.0,
+          "y": 15.396231501278498
+        },
+        {
+          "x": 18.0,
+          "y": 17.320760438938297
+        },
+        {
+          "x": 20.0,
+          "y": 19.24528937659808
+        }
+      ],
+      "Infant Deaths": [
+        {
+          "x": -20.0,
+          "y": -1.7328667822595407
+        },
+        {
+          "x": -18.0,
+          "y": -1.5595801040335926
+        },
+        {
+          "x": -16.0,
+          "y": -1.3862934258076247
+        },
+        {
+          "x": -14.0,
+          "y": -1.2130067475816766
+        },
+        {
+          "x": -12.0,
+          "y": -1.0397200693557282
+        },
+        {
+          "x": -10.0,
+          "y": -0.8664333911297605
+        },
+        {
+          "x": -8.0,
+          "y": -0.6931467129038124
+        },
+        {
+          "x": -6.0,
+          "y": -0.5198600346778641
+        },
+        {
+          "x": -4.0,
+          "y": -0.34657335645191595
+        },
+        {
+          "x": -2.0,
+          "y": -0.17328667822594818
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 2.0,
+          "y": 0.17328667822596777
+        },
+        {
+          "x": 4.0,
+          "y": 0.34657335645189635
+        },
+        {
+          "x": 6.0,
+          "y": 0.5198600346778641
+        },
+        {
+          "x": 8.0,
+          "y": 0.6931467129038319
+        },
+        {
+          "x": 10.0,
+          "y": 0.8664333911297997
+        },
+        {
+          "x": 12.0,
+          "y": 1.0397200693557282
+        },
+        {
+          "x": 14.0,
+          "y": 1.213006747581696
+        },
+        {
+          "x": 16.0,
+          "y": 1.3862934258076247
+        },
+        {
+          "x": 18.0,
+          "y": 1.5595801040336121
+        },
+        {
+          "x": 20.0,
+          "y": 1.7328667822595603
+        }
+      ],
+      "Under-5 Deaths": [
+        {
+          "x": -20.0,
+          "y": 0.9374668320254578
+        },
+        {
+          "x": -18.0,
+          "y": 0.8437201488228963
+        },
+        {
+          "x": -16.0,
+          "y": 0.7499734656203544
+        },
+        {
+          "x": -14.0,
+          "y": 0.6562267824178125
+        },
+        {
+          "x": -12.0,
+          "y": 0.5624800992152511
+        },
+        {
+          "x": -10.0,
+          "y": 0.4687334160127289
+        },
+        {
+          "x": -8.0,
+          "y": 0.374986732810187
+        },
+        {
+          "x": -6.0,
+          "y": 0.28124004960764515
+        },
+        {
+          "x": -4.0,
+          "y": 0.1874933664051033
+        },
+        {
+          "x": -2.0,
+          "y": 0.09374668320254184
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 2.0,
+          "y": -0.09374668320254184
+        },
+        {
+          "x": 4.0,
+          "y": -0.18749336640508368
+        },
+        {
+          "x": 6.0,
+          "y": -0.28124004960762555
+        },
+        {
+          "x": 8.0,
+          "y": -0.37498673281016737
+        },
+        {
+          "x": 10.0,
+          "y": -0.46873341601270924
+        },
+        {
+          "x": 12.0,
+          "y": -0.5624800992152511
+        },
+        {
+          "x": 14.0,
+          "y": -0.6562267824177929
+        },
+        {
+          "x": 16.0,
+          "y": -0.7499734656203544
+        },
+        {
+          "x": 18.0,
+          "y": -0.8437201488228963
+        },
+        {
+          "x": 20.0,
+          "y": -0.9374668320254185
+        }
+      ]
+    }
+  },
+  "cost_config": {
+    "price_per_dose": 0.318,
+    "baked_wastage": 0.25,
+    "default_wastage": 0.25
+  },
+  "forecast_years": [
+    2025,
+    2026,
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "countries": [
+    "Kyrgyzstan",
+    "Lesotho",
+    "Uzbekistan"
+  ]
+}
